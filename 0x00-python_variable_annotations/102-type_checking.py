@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
+""" Using lists and tuples and validating using mypy """
 from typing import Tuple, List
+
+
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
+    """ Validating if returning a list """
     zoomed_in: List = [
         item for item in lst
         for i in range(int(factor))
